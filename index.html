@@ -5,61 +5,8 @@
 	<meta charset="utf-8">
 	<title>電子喜帖</title>
 	<link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+	<link href='./css/main.css' rel='stylesheet'>
 
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-
-		}
-
-		div.TopMessage {
-			text-align: center;
-			/* 设置 div 内文本水平居中 */
-		}
-
-		.TopMessage h1 {
-			margin-top: 10%;
-		}
-
-		a {
-			text-decoration: none;
-			/* 取消下划线 */
-			color: white;
-			/* 使用继承的颜色，或者设置为你想要的颜色 */
-		}
-
-		h1 {
-			font-family: 'Dancing Script';
-			/* 替换 "Your Preferred Font" 为你喜欢的字体 */
-			font-size: 100px;
-			/* 调整字体大小 */
-			font-weight: bold;
-			/* 设置字体粗细 */
-			color: block;
-			/* 设置字体颜色 */
-			/* 其他字体相关属性可以根据需要添加 */
-			display: inline-block;
-			/* 使 h1 成为内联块元素 */
-		}
-
-		table {
-			height: 50px;
-			width: 100%;
-			table-layout: fixed;
-			/* 固定表格布局 */
-		}
-
-		th,
-		td {
-			font-size: 25px;
-			font-weight: bold;
-			width: auto;
-			/* 平均分配列宽 */
-			border: 0px solid #ddd;
-			/* 边框样式，可选 */
-		}
-	</style>
 </head>
 
 <body>
@@ -71,16 +18,35 @@
 	<div style="width:100%;height:50px;background-color:rgba(180,180,180,0.5);color:white; text-algin:center;">
 		<table>
 			<th>
-			<td><a href="#">婚宴小語</a></td>
-			<td><a href="#">婚宴地址</a></td>
+			<td><a href="#">婚宴資訊</a></td>
+			<td><a href="#">婚紗照搶先看</a></td>
 			</th>
 		</table>
 	</div>
-	<header style="width:100%;height:500px">
+	<header style="width:100%;height:1000px">
 		<!-- 開頭照片 -->
 		<img src="./imgs/header.jpeg" alt="開頭照片" style="width:55%;height:1000px">
 		<h2 style="float:right;margin-right:15%">婚宴小語</h2>
 	</header>
+	<div style="width:100%;height:50px; padding-top: 10px; background-color:rgba(180,180,180,0.5);color:white; ">
+		<h2 style="text-align:center;">婚宴資訊</h2>
+	</div>
+	<div class="mainbody" style="width:100%;height:500px;background-color:rgba(247, 242, 171, 0.5);">
+		<button style="height: 50px;width: 100px;margin:350px 0 0 45%;"><p style="font-size: medium;">我要參加</p></button>
+	</div>
+
+	<div style="width:100%;height:50px; padding-top: 10px; background-color:rgba(180,180,180,0.5);color:white; ">
+		<h2 style="text-align:center;">婚紗照搶先看</h2>
+	</div>
+
+	<div class="weddingPhoto"class="mainbody" style="width:100%;height:800px;background-color:rgba(247, 242, 171, 0.5);" >
+
+	</div>
+
+	<footer style="width:100%;padding-top: 50px; height:200px;background-color:rgba(167, 166, 165, 0.705);color:white;">
+
+		<h2 style="text-align:center;">期待您的蒞臨</h2>
+	</footer>
 
 
 
