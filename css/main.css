@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+	font-family: "Dancing Script";
 }
 
 @media only screen and (max-width: 768px) {
@@ -12,15 +13,16 @@
 	
     .map-container iframe {
 		width: 100%;
-        height: 300px; /* 或者您可以根據需要設置不同的高度 */
+        /*height: 300px; /* 或者您可以根據需要設置不同的高度 */
     }
 }
 
 body {
+	padding-left: 40px;
     background-image: url('../imgs/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* 可選，使背景圖固定 */
+    background-attachment: center; /* 可選，使背景圖固定*/ 
 	z-index: -1;
 }
 
@@ -33,6 +35,12 @@ h3 {
     text-align: center;
 }
 
+header{
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+
 header h2 {
     margin-top: 30px; /* 設置與上個元素之間的距離 */
 }
@@ -40,7 +48,7 @@ header h2 {
 .TopMessage {
     text-align: center;
     /* 设置 div 内文本水平居中 */
-    height: 350px;
+    height: auto;
 }
 
 .TopMessage h1 {
@@ -60,6 +68,7 @@ header h2 {
 }
 
 .menu-bar {
+	width: 100%;
     height: 50px;
 	display: flex;
     background-color: rgba(180, 180, 180, 0.5);
@@ -77,25 +86,28 @@ header h2 {
 }
 
 .mainbody {
-    display: flex;
-    align-items: flex-start;
-    /* 将内容对齐到顶部 */
-    flex-wrap: wrap;
+    display: block;
     /* 允许元素换行 */
     padding-top: 20px;
-    width: 100%;
-    height: 700px;
+	margin-bottom: 100px;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
 .mainbody-info {
-    flex: 1;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    width:100%;
     padding: 20px;
-    text-indent: 4em;
+	text-align: left;
+    /*text-indent: 4em;*/
 }
 
 .map-container {
-    flex: 1;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
     padding: 20px;
 }
 
@@ -111,9 +123,11 @@ header h2 {
 }
 
 button {
-    height: 50px;
-    width: 80px;
-    font-size: medium;
+    height: 100px;
+    width: 300px;
+    font-size: 2em;
+	font-weight: bold;
+	color:white;
 }
 
 .wedding-photo {
@@ -122,7 +136,14 @@ button {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.container h2{
+	width: 100%;
+	display: block;
+}
+
+
 footer {
+	width: 100%;
     padding-top: 50px;
     height: 200px;
     background-color: rgba(167, 166, 165, 0.705);
