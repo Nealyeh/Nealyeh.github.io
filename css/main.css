@@ -4,7 +4,7 @@
 	font-family: "Dancing Script";
 }
 
-@media (max-width: 900px) {
+@media (max-width: 599px) {
     .mainbody-info,
     .map-container,
     .button-container {
@@ -13,7 +13,7 @@
 	
 	
 	header,.TopMessage,.menu-bar a,.mainbody-info,.container,footer{
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 }
 
