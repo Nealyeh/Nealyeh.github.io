@@ -10,12 +10,12 @@
 	.menu-bar,
 	.container
      {
-		font-size: 4em !important;
+		font-size: 2em !important;
     }
 	
 	
 	header,.TopMessage,footer{
-		font-size: 4em !important;
+		font-size: 2em !important;
 	}
 	
 	/*.menu-bar{
