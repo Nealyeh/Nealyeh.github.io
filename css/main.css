@@ -4,7 +4,7 @@
 	font-family: "Dancing Script";
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 900px) {
     .mainbody-info,
     .map-container,
     .button-container {
