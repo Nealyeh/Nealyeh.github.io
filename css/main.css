@@ -33,12 +33,11 @@
 
 body {
 	padding-left: 40px;
-    background-image: url('../imgs/background.jpg');
+    background-image: url('../imgs/background.webp');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: center; /* 可選，使背景圖固定*/ 
+    background-attachment: fixed; /* 可選，使背景圖固定*/ 
 	z-index: -1;
-	overflow: hidden; /* 避免图片溢出容器 */
 }
 
 
