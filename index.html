@@ -10,6 +10,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Herr+Von+Muellerhoff&family=Imperial+Script&family=Monsieur+La+Doulaise&family=Parisienne&family=Pinyon+Script&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
     <link href='./css/main.css' rel='stylesheet'>
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -19,19 +21,22 @@
     </div>
     <!-- menu bar -->
     <div class="menu-bar">
-        <a href="#">婚宴資訊</a>
-        <a href="#">婚紗照搶先看</a>
+        <a href="#wedding-info">婚宴資訊</a>
+        <a href="#wedding-photos">婚紗照搶先看</a>
     </div>
     <header>
         <!-- 開頭照片 -->
         <h2>婚宴小語</h2>
-        <h3>a</h3>
-        <h3>b</h3>
-        <h3>c</h3>
-        <h3>d</h3>
+        <h3>親愛的親朋好友：</h3>
+		<h3>這一次，我們將舉行一場特別的聚會，不僅是為了慶祝我們的愛情，更是為了感謝您們多年來的支持和祝福。</h3>
+        <h3>我們誠摯地邀請您參加我們的婚宴，這次聚會將為我們的婚姻再添一份溫馨的回憶。</h3>
+		<h3>您的存在將使這個特別的時刻更加完美。</h3>
+        
         <img class="header-img" src="./imgs/header.jpeg" alt="開頭照片" />
+		
+		<h3>讓我們一同共度這個充滿愛和歡樂的日子，一同開啟嶄新的旅程。</h3>
     </header>
-    <div class="container">
+    <div id="wedding-info" class="container">
         <h2>婚宴資訊</h2>
     </div>
     <div class="mainbody">
@@ -42,23 +47,40 @@
             <h3>時間：中午十二時準時入席</h3>
         </div>
         <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.446754850515!2d120.65857188885496!3d24.156060000000018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d9d2a396547%3A0xbcfaedfa2eb17a15!2z5Y-w5Lit6YeR5YW46YWS5bqX!5e0!3m2!1szh-TW!2sjp!4v1707010171601!5m2!1szh-TW!2sjp" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.446754850515!2d120.65857188885496!3d24.156060000000018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d9d2a396547%3A0xbcfaedfa2eb17a15!2z5Y-w5Lit6YeR5YW46YWS5bqX!5e0!3m2!1szh-TW!2sjp!4v1707010171601!5m2!1szh-TW!2sjp" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="button-container">
             <button>我要參加</button>
         </div>
     </div>
 
-    <div class="container">
+    <div id="wedding-photos" class="container">
         <h2>婚紗照搶先看</h2>
     </div>
 
-    <div class="wedding-photo"></div>
+    <div class="wedding-photo">
+    	<img src="./imgs/01.jpeg" alt="Wedding Photo">
+	</div>
+
+
 
     <footer>
+		<h2>衷心感謝您的支持和祝福</h2>
+		<h2>新郎 家和 & 新娘 奈津美</h2>
         <h2>期待您的蒞臨</h2>
     </footer>
 </body>
 
-
-</html>
+<script>
+$(document).ready(function(){
+    var images = ['01.jpeg', '02.jpeg', '03.jpeg', '04.jpeg'];
+    var currentIndex = 0;
+    
+    function showImage() {
+        $('.wedding-photo img').attr('src', './imgs/' + images[currentIndex]);
+        currentIndex = (currentIndex + 1) % images.length;
+    }
+    
+    setInterval(showImage, 3000); // Change image every 3 seconds
+});
+</script></html>
