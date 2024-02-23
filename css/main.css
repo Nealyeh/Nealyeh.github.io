@@ -5,9 +5,8 @@
 }
 
 @media screen and (max-width:599px) {
-    .mainbody-info,
-    .map-container,
-	.menu-bar,
+ .mainbody-info,
+ .map-container,
 	.container
      {
 		font-size: 1.5em !important;
