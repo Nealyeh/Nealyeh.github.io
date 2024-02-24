@@ -22,6 +22,15 @@
 		font-size: 1.2em !important;
 	}
 	
+	.TopMessage{
+		height: auto;
+		/*overflow: hidden;*/
+	}
+	
+	#welcometext{
+		white-space: normal !important;
+	}
+	
 	.menu-bar a{
 		font-size: 98% !important;
 	}
@@ -70,6 +79,11 @@ header h3{
     text-align: center;
     /* 设置 div 内文本水平居中 */
     height: auto;
+	/*width:100%;*/
+}
+
+.hidden{
+	opacity: 0;
 }
 
 .TopMessage h1 {
@@ -80,7 +94,6 @@ header h3{
     /* 设置字体粗细 */
     display: inline-block;
     /* 使 h1 成为内联块元素 */
-   
 	color: #8B4513; /* 中間值的金色 */
     text-shadow: 2px 2px 6px rgba(139, 69, 19, 0.8); /* 使用中間值的金色陰影，並稍微減少透明度 */
     font-weight: normal; /* 設置文字為粗體 */
@@ -95,6 +108,7 @@ header h3{
     color: white;
 	justify-content:center;
     align-items:center;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
 }
 
 .menu-bar a {
@@ -138,6 +152,7 @@ header h3{
 iframe {
         width: 100%;
         height: 100%;
+		box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
     }
 
 .button-container {
@@ -158,6 +173,9 @@ button {
 	font-weight: bold;
 	color:white;
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.6); /* 添加文字陰影效果 */
+	background-color: rgba(128,128,128,0.5);
+	border:none;
+	box-shadow: 0px 4px 6px rgba(0,0,0,0.2);	
 }
 
 .wedding-photo {
@@ -187,6 +205,8 @@ footer {
     background-color: rgba(167, 166, 165, 0.705);
     color: white;
     text-align: center;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* 添加文字陰影效果 */
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
 }
 
 footer h2{

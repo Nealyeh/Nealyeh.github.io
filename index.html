@@ -17,7 +17,7 @@
 <body>
     <!-- 置顶留白 -->
     <div class="TopMessage">
-        <h1>Wellcome To Our Wedding</h1>
+        <h1 id="welcomeText">Welcome To Our Wedding</h1>
     </div>
     <!-- menu bar -->
     <div class="menu-bar">
@@ -82,6 +82,34 @@ $(document).ready(function(){
     }
     
     setInterval(showImage, 3000); // Change image every 3 seconds
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const text = document.getElementById('welcomeText');
+    const letters = text.innerText.split('');
+    text.innerHTML = '';
+
+    function animateLetters(index) {
+        if (index < letters.length) {
+            const span = document.createElement('span');
+            span.textContent = letters[index];
+            span.style.animationDelay = `${index * 0.1}s`; // 每个字母的动画延迟1秒
+            span.style.fontFamily = '"Monsieur La Doulaise", cursive';
+            text.appendChild(span);
+            setTimeout(() => {
+                animateLetters(index + 1); // 递归调用下一个字母的显示
+            }, 150);
+        } else {
+            setTimeout(restartAnimation, 5000); // 在所有字母显示完毕后，延迟3秒重新开始动画
+        }
+    }
+
+    function restartAnimation() {
+        text.innerHTML = ''; // 清空文字内容
+        animateLetters(0); // 重新开始逐字母显示动画
+    }
+
+    animateLetters(0); // 开始逐字母显示动画
 });
 </script>
 
