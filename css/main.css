@@ -4,6 +4,16 @@
 	font-family: "Dancing Script";
 }
 
+img {
+			pointer-events: none;
+			user-select: none;
+			-webkit-user-drag: none;
+			-moz-user-select: none;
+			-o-user-select: none;
+			-khtml-user-select: none;
+			-ms-user-select: none;
+		}
+
 @media screen and (max-width:599px) {
  .mainbody-info,
  .map-container,
