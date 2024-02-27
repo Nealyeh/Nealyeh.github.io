@@ -41,12 +41,24 @@
 }
 
 body {
-	padding-left: 40px;
+    position: relative;
+    padding-left: 40px;
+    z-index: 1; /* 確保 body 中的內容在覆蓋層上方顯示 */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('../imgs/background.webp');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* 可選，使背景圖固定*/ 
-	z-index: -1;
+    background-attachment: fixed;
+    z-index: -1;
+    filter: blur(3px); /* 調整模糊效果的值，使圖片變得更朦朧 */
 }
 
 
